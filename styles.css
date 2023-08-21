@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Comic Neue', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.date {
+  margin-right: 1.5rem;
+  align-self: end;
+}
+
+.logo {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Comic Neue', sans-serif;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+}
+
+.nav-list > li:nth-child(2) {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 0.5rem;
+}
+
+.books-section,
+.add-books,
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 1rem;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-heading {
+  margin-bottom: 2rem;
+}
+
+.contact-list {
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 40rem;
+  padding: 0 2rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+
+.add-btn {
+  padding: 0.5rem 1.15rem;
+  align-self: end;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  margin-top: 0.5rem;
+}
+
+.books {
+  border: 2px solid black;
+}
+
+.book-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  width: 90vw;
+  padding: 1rem;
+}
+
+.book-wrapper:nth-child(odd) {
+  background-color: #ebeaea;
+}
+
+.book-wrapper h3 {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.remove-button {
+  margin-left: auto;
+  background-color: rgb(243, 241, 241);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+footer {
+  border: 2px solid black;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 2rem);
+  margin: 1rem;
+}
+
+.toggle {
+  display: none;
+}
